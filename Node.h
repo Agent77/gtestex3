@@ -1,0 +1,31 @@
+#ifndef EX1_NODE_H
+#define EX1_NODE_H
+#include "Node.h"
+#include "Point.h"
+#include "Coordinate.h"
+
+/*
+ * Node is a class that represents each object on the grid. it has a reference to the node that
+ * we came from on the grid, it's location and a member that says whether it has been visited
+ * on the grid or not.
+ */
+
+class Node {
+private:
+    Coordinate* myLocation;
+    Node* prev;
+    bool visited;
+public:
+    Node* neighbors;
+    Node();
+    ~Node();
+    Node(Coordinate* c);
+    bool isVisited();
+    void visit();
+    Node* getPrev();
+    void setPrev(Node& n);
+    int* getLocation();
+    Coordinate* getMyLocation();
+};
+
+#endif //EX1_NODE_H

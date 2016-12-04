@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/nirbs/ClionProjects/try/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_95c65/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95c65.dir/build.make CMakeFiles/cmTC_95c65.dir/build
+make[1]: Entering directory '/home/nirbs/ClionProjects/try/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95c65.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_95c65.dir/CheckSymbolExists.c.o   -c /home/nirbs/ClionProjects/try/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_95c65
+/home/nirbs/clion-2016.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95c65.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_95c65.dir/CheckSymbolExists.c.o  -o cmTC_95c65 -rdynamic 
+CMakeFiles/cmTC_95c65.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_95c65.dir/build.make:97: recipe for target 'cmTC_95c65' failed
+make[1]: *** [cmTC_95c65] Error 1
+make[1]: Leaving directory '/home/nirbs/ClionProjects/try/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_95c65/fast' failed
+make: *** [cmTC_95c65/fast] Error 2
+
+File /home/nirbs/ClionProjects/try/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/nirbs/ClionProjects/try/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_46d06/fast"
+/usr/bin/make -f CMakeFiles/cmTC_46d06.dir/build.make CMakeFiles/cmTC_46d06.dir/build
+make[1]: Entering directory '/home/nirbs/ClionProjects/try/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_46d06.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_46d06.dir/CheckFunctionExists.c.o   -c /home/nirbs/clion-2016.3/bin/cmake/share/cmake-3.6/Modules/CheckFunctionExists.c
+Linking C executable cmTC_46d06
+/home/nirbs/clion-2016.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46d06.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_46d06.dir/CheckFunctionExists.c.o  -o cmTC_46d06 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_46d06.dir/build.make:97: recipe for target 'cmTC_46d06' failed
+make[1]: *** [cmTC_46d06] Error 1
+make[1]: Leaving directory '/home/nirbs/ClionProjects/try/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_46d06/fast' failed
+make: *** [cmTC_46d06/fast] Error 2
+
+

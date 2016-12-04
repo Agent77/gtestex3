@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="try"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\googletest-master\;CMake Files\googletest-master\googlemock\;CMake Files\googletest-master\googletest\;CMake Files\googletest-master\googletest\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="try">
+				<Option output="/home/nirbs/ClionProjects/try/cmake-build-debug/try" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 try"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="try/fast">
+				<Option output="/home/nirbs/ClionProjects/try/cmake-build-debug/try" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 try/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex2">
+				<Option output="/home/nirbs/ClionProjects/try/cmake-build-debug/libex2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex2"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex2/fast">
+				<Option output="/home/nirbs/ClionProjects/try/cmake-build-debug/libex2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex2/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googlemock/include"/>
+					<Add directory="/home/nirbs/ClionProjects/try/googletest-master/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nirbs/ClionProjects/try/cmake-build-debug/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/nirbs/ClionProjects/try/BFS.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/BFS.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Coordinate.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Coordinate.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Driver.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Driver.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Grid.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Grid.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Node.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Node.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Passenger.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Passenger.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Point.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Point.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Taxi.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Taxi.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TaxiCenter.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TaxiCenter.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestDriver.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestDriver.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestGrid.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestGrid.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestNode.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestNode.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestPassenger.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestPassenger.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestPoint.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestPoint.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestTaxi.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestTaxi.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestTaxiCenter.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestTaxiCenter.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestTrip.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/TestTrip.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Trip.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/Trip.h">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googlemock/src/gmock-all.cc">
+			<Option target="gmock_main"/>
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googletest/src/gtest-all.cc">
+			<Option target="gmock_main"/>
+			<Option target="gmock"/>
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/main.cpp">
+			<Option target="try"/>
+			<Option target="ex2"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\googletest-master\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\googletest-master\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\googletest-master\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\googletest-master\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\googletest-master\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\googletest-master\googletest\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\googletest-master\googletest\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\googletest-master\googletest\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\googletest-master\googletest\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/nirbs/ClionProjects/try/googletest-master/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\googletest-master\googletest\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
