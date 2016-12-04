@@ -65,6 +65,7 @@ TEST_F(TestTaxiCenter, CreateTrip) {
     ASSERT_TRUE(ptrSource->equalTo(trptrSource))<<"TaxiCenter didn't get passanger's source";
     ASSERT_TRUE(ptrDest->equalTo(trptrDest))<<"TaxiCenter didn't get passanger's destination";
 }
+//coom
 /*TEST_F(TestTaxiCenter, SetTaxiLocations) {//TODO
  //Checks that locations are all updated
     TaxiCenter tc = TaxiCenter();
