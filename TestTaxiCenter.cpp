@@ -31,7 +31,7 @@ TEST_F(TestTaxiCenter, addTrip) {
     ASSERT_EQ(tc.getLocations()[2].getX(), p[2].getX()) << "Did not set new Location in place 2.";
 }*/
 
-TEST_F(TestTaxiCenter, checkDestinations) {
+/*TEST_F(TestTaxiCenter, checkDestinations) {
     TaxiCenter tc = TaxiCenter();
     Point* locs = tc.getLocations();
     locs[0] = Point(0,0);
@@ -49,7 +49,7 @@ TEST_F(TestTaxiCenter, checkDestinations) {
     index = tc.checkDestinations();
     //Should find a destination match at index 0 of locations
     ASSERT_EQ(index, 0) << "Doesnt know that it arrived at destination 0.";
-}
+}*/
 
 
 TEST_F(TestTaxiCenter, FindDriver) { //TODO
@@ -68,6 +68,10 @@ TEST_F(TestTaxiCenter, CreateTrip) {
     Point* ptrDest = new Point(pass.getDestination().getX(), pass.getDestination().getY());
     ASSERT_TRUE(ptrSource->equalTo(trptrSource)) << "TaxiCenter didn't get passanger's source";
     ASSERT_TRUE(ptrDest->equalTo(trptrDest)) << "TaxiCenter didn't get passanger's destination";
+    delete trptrSource;
+    delete  trptrDest;
+    delete ptrDest;
+    delete ptrSource;
 }
 
 TEST_F(TestTaxiCenter, SetTaxiLocations) {
@@ -80,9 +84,7 @@ TEST_F(TestTaxiCenter, SetTaxiLocations) {
     tc.setTaxiLocations(p);
     Point* locs;
     locs = tc.getLocations();
-    ASSERT_TRUE(locs[0].getX() == p[0].getX() && p[0].getY() == locs[0].getY())<<"first driver's location hasn't been updated";
-    ASSERT_TRUE(locs[1].getX() == p[1].getX() && p[1].getY() == locs[1].getY())<<"second driver's location hasn't been updated";
-    ASSERT_TRUE(locs[2].getX() == p[2].getX() && p[2].getY() == locs[2].getY())<<"third driver's location hasn't been updated";
+    ASSERT_TRUE(locs[0].getX() == p[0].getX() && p[0].getY() == locs[0].getY()) << "first driver's location hasn't been updated";
+    ASSERT_TRUE(locs[1].getX() == p[1].getX() && p[1].getY() == locs[1].getY()) << "second driver's location hasn't been updated";
+    ASSERT_TRUE(locs[2].getX() == p[2].getX() && p[2].getY() == locs[2].getY()) << "third driver's location hasn't been updated";
 }
-
-//Comment

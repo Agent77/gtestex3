@@ -27,7 +27,6 @@ void TaxiCenter::updateMeters() {
 }
 
 int TaxiCenter::checkDestinations()  {
-
 }
 
 void TaxiCenter::setLocation(int index, Point location) {
