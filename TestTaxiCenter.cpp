@@ -4,9 +4,11 @@
 
 TEST_F(TestTaxiCenter, addTrip) {
     TaxiCenter tc = TaxiCenter();
-    tc.getLocations()[0] = Point(0,0);
-    tc.getLocations()[1] = Point(1,1);
-    tc.getLocations()[2] = Point(2,2);
+    Point points[3];
+    points[0] = Point(0,0);
+    points[1] = Point(1,1);
+    points[2] = Point(2,2);
+    tc.setTaxiLocations(points);
     Trip* trips = tc.getTrips();
     trips[0] = Trip(Point(3,3), Point(1,1));
     trips[1] = Trip(Point(2,2), Point(3,4));
@@ -50,15 +52,19 @@ TEST_F(TestTaxiCenter, FindDriver) { //TODO
 
 //Take into account luxury vs standard cabs arriving faster
 }
-/*TEST_F(TestTaxiCenter, CreateTrip) { //TODO
+TEST_F(TestTaxiCenter, CreateTrip) {
 //Make sure takes information from passenger correctly
     TaxiCenter tc = TaxiCenter();
     Passenger pass = Passenger (Point (1,2),Point (3,3));
     tc.createTrip(pass);
-    Trip tr= (Point (1,2), Point(3,3)); //todo error
-    ASSERT_EQ(pass.getSource(),tr.getSource())<<"TaxiCenter didn't get passanger's source";
-    ASSERT_EQ(pass.getDestination(),tr.getDest())<<"TaxiCenter didn't get passanger's destination";
-}*/
+    Trip tr = Trip(Point (1,2), Point(3,3)); //todo error
+    Point* trptrSource = new Point(tr.getSource().getX(), tr.getSource().getY());
+    Point* trptrDest = new Point(tr.getDest().getX(), tr.getDest().getY());
+    Point* ptrSource = new Point(pass.getSource().getX(), pass.getSource().getY());
+    Point* ptrDest = new Point(pass.getDestination().getX(), pass.getDestination().getY());
+    ASSERT_TRUE(ptrSource->equalTo(trptrSource))<<"TaxiCenter didn't get passanger's source";
+    ASSERT_TRUE(ptrDest->equalTo(trptrDest))<<"TaxiCenter didn't get passanger's destination";
+}
 /*TEST_F(TestTaxiCenter, SetTaxiLocations) {//TODO
  //Checks that locations are all updated
     TaxiCenter tc = TaxiCenter();
