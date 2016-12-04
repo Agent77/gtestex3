@@ -22,7 +22,7 @@ public:
     void getManu();
     int getTariff();
     int getId();
-    int getKms();
+    int getKms(){};
 };
 
 
