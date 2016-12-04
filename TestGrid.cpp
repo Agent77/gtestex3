@@ -43,4 +43,5 @@ TEST_F(TestGrid, GetNode) {
     Point* p = new Point(1,2);
     Node n = Node(p);
     ASSERT_TRUE(n.getLocation()[0] == 1 && n.getLocation()[1] == 2) << "Node initialized incorrectly.";
+    delete p;
 }

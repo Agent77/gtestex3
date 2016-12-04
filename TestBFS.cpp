@@ -14,8 +14,9 @@ TEST_F(TestBFS, getPath) {
 
 TEST_F(TestBFS,visitNeighbors){
     Point* np = new Point(1,1);
+    Node *n= new Node(np);
     Point p[4];
-    std::vector<Node*> neighbors = bfs->visitNeighbors(new Node(np));
+    std::vector<Node*> neighbors = bfs->visitNeighbors(n);
      p[0] =  Point(0,1);
      p[1] =  Point(1,2);
      p[2] =  Point(2,1);
@@ -38,5 +39,7 @@ TEST_F(TestBFS,visitNeighbors){
         i++;
         v++;
     }
+    delete np;
+    delete n;
 
 }
