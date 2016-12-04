@@ -23,7 +23,7 @@ public:
     int getTariff();
     Point getSource();
     Point getDest();
-    void addMeters();
+    void addMeters(){};
 
 };
 

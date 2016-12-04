@@ -25,7 +25,7 @@ public:
     void updateMeters();
     int checkDestinations();
     Point* getLocations() { return locations;}
-    Trip* getTrips(){};
+    Trip* getTrips(){ return trips;};
 
 };
 

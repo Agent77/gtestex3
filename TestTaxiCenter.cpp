@@ -2,18 +2,20 @@
 #include "gtest/gtest.h"
 #include "TestTaxiCenter.h"
 
-/*TEST_F(TestTaxiCenter, addTrip) {
+TEST_F(TestTaxiCenter, addTrip) {
     TaxiCenter tc = TaxiCenter();
     tc.getLocations()[0] = Point(0,0);
     tc.getLocations()[1] = Point(1,1);
     tc.getLocations()[2] = Point(2,2);
-    tc.getTrips()[0] = Trip(Point(3,3), Point(1,1));
-    tc.getTrips()[1] = Trip(Point(2,2), Point(3,4));
-    int size = sizeof(tc.getTrips())/4;
+    Trip* trips = tc.getTrips();
+    trips[0] = Trip(Point(3,3), Point(1,1));
+    trips[1] = Trip(Point(2,2), Point(3,4));
+    int size = sizeof(trips)/4;
     tc.addTrip(Passenger());
-    int newSize = sizeof(tc.getTrips())/4;
+    trips = tc.getTrips();
+    int newSize = sizeof(trips)/4;
     ASSERT_GT(newSize,size)<< "Did not add trip.";
-}*/ //todo segmentation fault
+}
 
 TEST_F(TestTaxiCenter, setTaxiLocations) {
     TaxiCenter tc = TaxiCenter();
