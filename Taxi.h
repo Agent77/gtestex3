@@ -8,14 +8,17 @@ class Taxi {
 private:
     int cabId;
     int kmPassed;
-    int manufacturer;
-    int color;
+    std::string manufacturer;
+    std::string color;
     int tariff;
     int speed;
     bool luxury;
 
+
 public:
     Taxi();
+    Taxi(int cabId, int kmPassed, std::string manufacturer, std::string color, int tariff,
+         int speed, bool luxury){};
     ~Taxi();
     void updateKms();
     int getSpeed();

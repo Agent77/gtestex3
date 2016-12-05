@@ -48,9 +48,18 @@ TEST_F(TestTaxiCenter, checkDestinations) {
 /*
  * Tests that the closest available driver to a passenger is chosen.
  */
-TEST_F(TestTaxiCenter, FindDriver) { //TODO
-
-//Take into account luxury vs standard cabs arriving faster
+TEST_F(TestTaxiCenter, FindDriver) {
+    Passenger p= Passenger(Point(2,3), Point(3,3));
+    TaxiCenter tc = TaxiCenter();
+    Trip t = Trip(p.getSource(),p.getDestination());
+    tc.setLocation(0,Point(2,1));
+    tc.setLocation(1,Point(2,1)); //This is the right driver because its a luxury cab and will
+                                  // arrive in one step
+    tc.setLocation(2,Point(3,3));
+    Driver rightDriver = Driver(123,25,"single");
+    rightDriver.setTaxi(Taxi (123,10,"honda","green",500,100,true));
+    Driver d = tc.findDriver(t);
+    ASSERT_EQ(d.getId(),rightDriver.getId())<< "The findDriver method didn't find the right one";
 }
 
 /*

@@ -26,6 +26,7 @@ public:
     int checkDestinations();
     Point* getLocations() { return locations;}
     Trip* getTrips(){ return trips;};
+    void addDriver(Driver d);
 
 };
 

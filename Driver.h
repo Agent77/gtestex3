@@ -20,6 +20,7 @@ public:
     int getAge();
     int getId();
     int getSatisfaction();
+    Point getLocation(){};
     Taxi getTaxi();
     Trip getTrip();
     Passenger* getPassengers();
