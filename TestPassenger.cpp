@@ -2,6 +2,9 @@
 #include "gtest/gtest.h"
 #include "TestPassenger.h"
 
+/*
+ * Tests that the passenger's constructor initiliazed its members as expected.
+ */
 TEST_F(TestPassenger, PassengerConstructor) {
     //Passenger p = Passenger(Point(1,2),Point(3,4));
     int x = p.getSource().getX();
@@ -14,11 +17,18 @@ TEST_F(TestPassenger, PassengerConstructor) {
     ASSERT_EQ(y, 4) << "destY not set correctly.";
 }
 
+/*
+ * Tests that the passenger's rate is between 1 to 5.
+ */
 TEST_F(TestPassenger, RateDriver) {
     int rating = p.rateDriver();
     ASSERT_GE(rating,1) << "Rating is less 1.";
     ASSERT_LE(rating, 5) << "Rating is greater than 5.";
 }
+
+/*
+ * Tests the source and destination values of a passenger.
+ */
 TEST_F(TestPassenger, Source) {
     Point source = p.getSource();
     Point dest = p.getDestination();

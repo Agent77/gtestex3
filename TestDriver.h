@@ -1,7 +1,3 @@
-//
-// Created by Tiki Lobel on 12/1/16.
-//
-
 #ifndef EX2_TESTDRIVER_H
 #define EX2_TESTDRIVER_H
 

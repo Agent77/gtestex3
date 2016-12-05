@@ -5,7 +5,9 @@
 
 #include <gtest/gtest.h>
 #include "Parser.h"
-
+/*
+ * Test class for parser.
+ */
 class TestParser: public::testing::Test {
 protected:
     Parser p;

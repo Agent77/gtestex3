@@ -13,8 +13,8 @@ private:
     TaxiCenter tc;
     BFS* map;
 public:
-    City();
-    void CallTaxiCenter(Passenger p);
+    City(){};
+    void CallTaxiCenter(Passenger p){};
     Passenger checkForPassengerCalls();
     TaxiCenter getTaxiCenter() {};
 };

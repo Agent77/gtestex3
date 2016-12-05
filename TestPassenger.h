@@ -4,6 +4,10 @@
 #include "Point.h"
 #include "Passenger.h"
 #include <gtest/gtest.h>
+
+/*
+ * Test class for passenger.
+ */
 class TestPassenger:public::testing::Test {
 protected:
     Passenger p;

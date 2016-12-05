@@ -2,7 +2,10 @@
 #include "gtest/gtest.h"
 #include "TestTaxi.h"
 
-TEST(TestTaxi, updatingKMs) {
+/*
+ * Tests that the correct number of kms has been inserted into the taxi.
+ */
+TEST_F(TestTaxi, updatingKMs) {
     Taxi t = Taxi();
     int kms = t.getKms();
     t.updateKms();

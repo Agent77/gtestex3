@@ -2,6 +2,9 @@
 #include "gtest/gtest.h"
 #include "TestTaxiCenter.h"
 
+/*
+ * Tests that a a trip has been added to the taxiCenter.
+ */
 TEST_F(TestTaxiCenter, addTrip) {
     TaxiCenter tc = TaxiCenter();
     Point points[3];
@@ -19,19 +22,10 @@ TEST_F(TestTaxiCenter, addTrip) {
     ASSERT_GT(newSize,size)<< "Did not add trip.";
 }
 
-/*TEST_F(TestTaxiCenter, setTaxiLocations) {
-    TaxiCenter tc = TaxiCenter();
-    Point p[3];
-    p[0] = Point(3,3);
-    p[1] = Point(2,2);
-    p[2] = Point(1,1);
-    tc.setTaxiLocations(p);
-    ASSERT_EQ(tc.getLocations()[0].getX(), p[0].getX()) << "Did not set new Location in place 0.";
-    ASSERT_EQ(tc.getLocations()[1].getX(), p[1].getX()) << "Did not set new Location in place 1.";
-    ASSERT_EQ(tc.getLocations()[2].getX(), p[2].getX()) << "Did not set new Location in place 2.";
-}*/
-
-/*TEST_F(TestTaxiCenter, checkDestinations) {
+/*
+ * Tests whether one of the cabs on the grid is in its destination at a given time.
+ */
+TEST_F(TestTaxiCenter, checkDestinations) {
     TaxiCenter tc = TaxiCenter();
     Point* locs = tc.getLocations();
     locs[0] = Point(0,0);
@@ -49,13 +43,19 @@ TEST_F(TestTaxiCenter, addTrip) {
     index = tc.checkDestinations();
     //Should find a destination match at index 0 of locations
     ASSERT_EQ(index, 0) << "Doesnt know that it arrived at destination 0.";
-}*/
+}
 
-
+/*
+ * Tests that the closest available driver to a passenger is chosen.
+ */
 TEST_F(TestTaxiCenter, FindDriver) { //TODO
 
 //Take into account luxury vs standard cabs arriving faster
 }
+
+/*
+ * Tests that a trip has been created with the correct information.
+ */
 TEST_F(TestTaxiCenter, CreateTrip) {
 //Make sure takes information from passenger correctly
     TaxiCenter tc = TaxiCenter();
@@ -74,6 +74,9 @@ TEST_F(TestTaxiCenter, CreateTrip) {
     delete ptrSource;
 }
 
+/*
+ * Tests that the new locations of the drivers on the grid has been updated.
+ */
 TEST_F(TestTaxiCenter, SetTaxiLocations) {
  //Checks that locations are all updated
     TaxiCenter tc = TaxiCenter();

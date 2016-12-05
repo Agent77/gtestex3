@@ -4,6 +4,9 @@
 
 #include <gtest/gtest.h>
 #include "Point.h"
+/*
+ * Test class for point.
+ */
 class TestPoint: public::testing::Test {
 protected:
     Point point;
