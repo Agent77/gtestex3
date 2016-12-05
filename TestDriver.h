@@ -7,6 +7,10 @@
 
 #include <gtest/gtest.h>
 #include "Driver.h"
+
+/*
+ * Test class for Driver
+ */
 class TestDriver:public::testing::Test {
 protected:
     Driver d;

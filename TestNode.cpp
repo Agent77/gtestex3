@@ -2,8 +2,10 @@
 #include "gtest/gtest.h"
 #include "TestNode.h"
 
-
-TEST(TestNode, Node) {
+/*
+ * Tests the non-default constructor of Node
+ */
+TEST_F(TestNode, Node) {
     Point* p;
     Point point = Point(1,2);
     p = &point;
@@ -15,12 +17,19 @@ TEST(TestNode, Node) {
     ASSERT_EQ(y, 2) << "y did not get correct value.";
 }
 
-TEST(TestNode, Visit) {
+/*
+ * Tests the visit function.
+ */
+TEST_F(TestNode, Visit) {
     Node n = Node();
     n.visit();
     ASSERT_TRUE(n.isVisited()) << "Did not visit properly.";
 }
-TEST(TestNode, Prev) {
+
+/*
+ * Tests that the correct previous node is returned.
+ */
+TEST_F(TestNode, Prev) {
     Point* point = new Point(1,2);
     Point* point2 = new  Point(3,3);
     Node* n = new Node(point);
@@ -33,7 +42,11 @@ TEST(TestNode, Prev) {
     delete prev;
 }
 
-TEST(TestNode, GetLocations) {
+/*
+ * Tests that the coordinates of a node
+ * is returned correctly.
+ */
+TEST_F(TestNode, GetLocations) {
     Point* point = new Point(1,2);
     Node* n = new Node(point);
     Point po(n->getMyLocation());

@@ -1,6 +1,3 @@
-//
-// Created by nirbs on 29/11/16.
-//
 
 #ifndef EX2_TESTBFS_H
 #define EX2_TESTBFS_H
@@ -10,7 +7,9 @@
 #include "BFS.h"
 
 #include <gtest/gtest.h>
-
+/*
+ * Test class for BFS.
+ */
 class TestBFS: public::testing::Test {
 protected:
     BFS* bfs;

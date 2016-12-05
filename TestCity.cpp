@@ -1,5 +1,11 @@
 
 #include "TestCity.h"
+
+/*
+ * Test for checking for passenger input, by
+ * checking if a passenger was added
+ * to the TaxiCenter
+ */
 TEST_F(TestCity, PassengerCalls) {
     int count = 0;
     Passenger p = Passenger();
@@ -14,5 +20,6 @@ TEST_F(TestCity, PassengerCalls) {
         count += t[i].getNumOfPassengers();
     }
     int count2 = count;
+    //Should be +1
     EXPECT_FALSE(count1 == count2) << "Didn't add new passenger.";
 }

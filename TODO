@@ -1,3 +1,6 @@
-
-//Write set ups and tear downs
-
+Nir:
+-TestPassenger.cpp/.h
+-TestPoint
+-TestTaxi
+-TestTrip
+-FindDriver in TestTaxiCenter

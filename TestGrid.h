@@ -5,6 +5,9 @@
 #include "gtest/gtest.h"
 #include "Grid.h"
 
+/*
+ * Test class for Grid
+ */
 class TestGrid:public::testing::Test {
 protected:
     Grid* grid;

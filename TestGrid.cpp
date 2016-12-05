@@ -4,6 +4,10 @@
 #include "Point.h"
 #include <gtest/gtest.h>
 
+/*
+ * Tests that the node can successfully retrieve its previous
+ * Node.
+ */
 TEST_F(TestGrid, GetLocationOfPrev) {
     Node* prev = new Node(point2);
     n->setPrev(*prev);
@@ -12,11 +16,16 @@ TEST_F(TestGrid, GetLocationOfPrev) {
     delete prev;
 }
 
+/*
+ * Tests that the Grid finds the corrected
+ * neighbors for a given Node.
+ */
 TEST_F(TestGrid, GetNeighbors) {
     Point* point = new Point(1,1);
     Node* n = new Node(point);
     Grid* grid = new Grid(4,4);
     Point p[4];
+    //Correct neighbors for (4,4)
     p[0] = Point(0,1);
     p[1] = Point(1,2);
     p[2] = Point(2,1);
@@ -39,6 +48,9 @@ TEST_F(TestGrid, GetNeighbors) {
     delete grid;
 }
 
+/*
+ * Ensures the correct node is returned.
+ */
 TEST_F(TestGrid, GetNode) {
     Point* p = new Point(1,2);
     Node n = Node(p);
