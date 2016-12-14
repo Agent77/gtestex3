@@ -12,7 +12,7 @@ protected:
     Driver d;
 public:
     void SetUp() {
-        d = Driver(345, 22, "WIDOW");
+        d = Driver(345, 22, 'W',3,15);
     }
 };
 

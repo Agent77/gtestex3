@@ -11,10 +11,11 @@
 class City {
 private:
     TaxiCenter tc;
-    BFS* map;
 public:
-    City(){};
-    void CallTaxiCenter(Passenger p){};
+    City(BFS* map);
+    City();
+    void move ();
+    void CallTaxiCenter(Passenger p);
     Passenger checkForPassengerCalls();
     TaxiCenter getTaxiCenter() {};
 };

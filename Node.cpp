@@ -7,6 +7,7 @@ using namespace std;
  */
 Node::Node() {
     visited = false;
+    obstacle = false;
 }
 
 /*
@@ -16,6 +17,7 @@ Node::Node() {
 Node::Node(Coordinate *p) {
     myLocation = p->getMyLocation();
     visited = false;
+    obstacle = false;
 }
 
 /*
@@ -59,4 +61,12 @@ Node::~Node() {
 
 Coordinate* Node::getMyLocation() {
     return myLocation;
+}
+
+void Node::makeObstacle() {
+    obstacle = true;
+}
+
+bool Node::isObstacle() {
+    return obstacle;
 }

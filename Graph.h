@@ -17,6 +17,7 @@ public:
     virtual std::vector<Node*> getNeighbors(Node* n)=0;
     virtual Node* getNode(Coordinate* p){};
     virtual void deleteGraph() {};
+    virtual void addObstacle(Coordinate* p){};
 };
 
 

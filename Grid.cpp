@@ -47,8 +47,10 @@ std::vector<Node*> Grid::getNeighbors(Node* n) {
         //9 o'clock neighbor
         Node* node = (arrayOfPtrsToNodes[(point.getX()) - 1][(point).getY()]);
         if(!(node->isVisited())){
-            node->setPrev(*n);
-            neighbors.push_back(node);
+            if(!node->isObstacle()) {
+                node->setPrev(*n);
+                neighbors.push_back(node);
+            }
         }
     }
     //Top border of grid
@@ -56,8 +58,10 @@ std::vector<Node*> Grid::getNeighbors(Node* n) {
         //12 o'clock neighbor
         Node* node = (arrayOfPtrsToNodes[(point).getX()][(point).getY() + 1]);
         if(!(node->isVisited())){
-            node->setPrev(*n);
-            neighbors.push_back(node);
+            if(!node->isObstacle()) {
+                node->setPrev(*n);
+                neighbors.push_back(node);
+            }
         }
     }
     //Right border of grid
@@ -65,8 +69,10 @@ std::vector<Node*> Grid::getNeighbors(Node* n) {
         //3 o'clock neighbor
         Node* node = arrayOfPtrsToNodes[(point).getX() + 1][(point).getY()];
         if(!(node->isVisited())){
-            node->setPrev(*n);
-            neighbors.push_back(node);
+            if(!node->isObstacle()) {
+                node->setPrev(*n);
+                neighbors.push_back(node);
+            }
         }
     }
     //Bottom border of grid
@@ -74,8 +80,10 @@ std::vector<Node*> Grid::getNeighbors(Node* n) {
         //6 o'clock neighbor
         Node* node = arrayOfPtrsToNodes[point.getX()][point.getY() - 1];
         if(!(node->isVisited())){
-            node->setPrev(*n);
-            neighbors.push_back(node);
+            if(!node->isObstacle()) {
+                node->setPrev(*n);
+                neighbors.push_back(node);
+            }
         }
     }
     return neighbors;
@@ -107,4 +115,9 @@ void Grid::deleteGraph() {
             delete n;
         }
     }
+}
+
+void Grid::addObstacle(Coordinate* p) {
+    Node* node = arrayOfPtrsToNodes[p->getNextCoordinate(0)][p->getNextCoordinate(1)];
+    node->makeObstacle();
 }

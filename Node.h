@@ -15,13 +15,16 @@ private:
     Coordinate* myLocation;
     Node* prev;
     bool visited;
+    bool obstacle = false;
 public:
     Node* neighbors;
     Node();
     ~Node();
     Node(Coordinate* c);
     bool isVisited();
+    bool isObstacle();
     void visit();
+    void makeObstacle();
     Node* getPrev();
     void setPrev(Node& n);
     int* getLocation();

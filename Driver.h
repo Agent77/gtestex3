@@ -1,34 +1,45 @@
 #ifndef EX2_DRIVER_H
 #define EX2_DRIVER_H
 
+#include <vector>
 #include "Trip.h"
 #include "Passenger.h"
 #include "Taxi.h"
 class Driver {
 private:
-    int driverID;
+    int driverId;
     int age;
+    int numberOfcustomers;
+    int vehicleId;
+    int exp;
+    double totalRate;
     double avgSatisfaction;
-    string maritalStatus;
+    char maritalStatus;
+    Graph* gps;
     Taxi taxi;
     Trip myTrip;
-    Passenger myPassengers[10];
+    std::vector <Passenger> myPassengers;
 public:
     Driver();
     ~Driver();
-    Driver(int id, int age, string mStatus);
+    Driver(int driverId, int age, char mStatus, int exp, int vehicleId, Graph* gps);
+    Driver(int driverId, int age, char mStatus, int exp, int vehicleId);
     int getAge();
-    int getId();
-    int getSatisfaction();
-    Point getLocation(){};
+    int getVehicleId() { return vehicleId;};
+    int getDriverId();
+    int getExp() {
+        return exp;
+    };
+    double getSatisfaction();
     Taxi getTaxi();
     Trip getTrip();
-    Passenger* getPassengers();
-    string getMaritalStatus();
+    vector <Passenger> getPassengers();
+    char getMaritalStatus();
     void setTaxi(Taxi t);
     void setTrip(Trip t);
     void rateMe(int rating);
     void addPassenger(Passenger p);
+    void drive(); //TODO update trip at end
 
 
 

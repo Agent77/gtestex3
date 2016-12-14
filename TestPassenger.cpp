@@ -3,7 +3,7 @@
 #include "TestPassenger.h"
 
 /*
- * Tests that the passenger's constructor initiliazed its members as expected.
+ * Tests that the passenger's constructor initialized its members as expected.
  */
 TEST_F(TestPassenger, PassengerConstructor) {
     //Passenger p = Passenger(Point(1,2),Point(3,4));

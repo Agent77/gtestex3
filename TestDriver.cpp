@@ -18,9 +18,9 @@ TEST_F(TestDriver, RateDriver) {
  * checking if their number of passengers increased
  */
 TEST_F(TestDriver, AddPassenger) {
-    int p1 = sizeof(d.getPassengers())/4;
+    unsigned long p1 = d.getPassengers().size();
     Passenger passenger = Passenger();
     d.addPassenger(passenger);
-    int p2 = sizeof(d.getPassengers())/4;
-    ASSERT_GE(p2, p1) << "Did not add Passenger. ";
+    unsigned long p2 = d.getPassengers().size();
+    ASSERT_GT(p2, p1) << "Did not add Passenger. ";
 }

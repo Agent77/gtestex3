@@ -26,7 +26,7 @@ public:
     std::vector<Node*> getNeighbors(Node* node);
     Node* getNode(Coordinate* p);
     void deleteGraph();
-
+    void addObstacle(Coordinate* p);
 
 };
 #endif //EX1_GRID_H
