@@ -17,5 +17,5 @@ public:
     }
 };
 
-
+//C
 #endif //EX2_TESTTRIP_H

@@ -3,7 +3,7 @@
 
 #include "Point.h"
 class Trip {
-
+//c
 private:
 
     int tripId;

@@ -12,7 +12,7 @@ TEST_F(TestTrip, AddMeters) {
     int m2 = t.getMeters();
     EXPECT_FALSE(m == m2) << "Didn't update meters!";
 }
-
+//c
 TEST_F(TestTrip, UpdateStart) {
     Trip t = Trip(20,0,1,2,2,3,2);
     Point* point = new Point(0,1);

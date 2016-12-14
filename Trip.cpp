@@ -4,7 +4,7 @@
 Trip::Trip() {
 
 }
-
+//c
 Trip::Trip(int tripId, int xStart, int yStart, int xEnd, int yEnd, int numOfPassengers, double tariff) {
     this->tripId=tripId;
     this->xStart=xStart;
