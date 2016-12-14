@@ -1,31 +1,30 @@
 
-#ifndef EX2_TAXI_H
-#define EX2_TAXI_H
+#ifndef GTESTEX3_TAXI_H
+#define GTESTEX3_TAXI_H
 
 #include <string>
+#include "BFS.h"
 
 class Taxi {
-private:
+protected:
+    BFS* gps;
     int cabId;
     int kmPassed;
-    std::string manufacturer;
-    std::string color;
+    char manufacturer;
+    char color;
     int tariff;
     int speed;
-    bool luxury;
-
 
 public:
     Taxi();
-    Taxi(int cabId, int kmPassed, std::string manufacturer, std::string color, int tariff,
-         int speed, bool luxury){};
-    ~Taxi();
-    void updateKms();
-    int getSpeed();
-    void getManu();
-    int getTariff();
-    int getId();
-    int getKms(){};
+    Taxi(int id, char type, char c);
+    ~Taxi(){};
+    virtual void updateKms();
+    virtual int getSpeed();
+    virtual void getManu();
+    virtual int getTariff();
+    virtual int getId();
+    virtual int getKms(){};
 };
 
 

@@ -8,6 +8,13 @@
  */
 class TestTrip: public::testing::Test {
 
+public:
+    void SetUp() {
+        cout << "Setting Up.\n";
+    }
+    void TearDown() {
+        cout<< "Tearing Down.\n";
+    }
 };
 
 

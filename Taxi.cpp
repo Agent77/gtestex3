@@ -6,9 +6,9 @@ Taxi::Taxi() {
 
 }
 
-Taxi::~Taxi() {
+//Taxi::~Taxi() {
 
-}
+//}
 
 void Taxi::updateKms() {
 
@@ -28,5 +28,11 @@ int Taxi::getTariff() {
 }
 
 int Taxi::getId() {
-
+return cabId;
 }
+
+Taxi::Taxi(int id, char type, char c) {
+    cabId = id;
+    manufacturer = type;
+    color = c;
+};
