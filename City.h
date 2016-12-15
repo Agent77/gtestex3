@@ -17,8 +17,7 @@ class City {
 private:
     TaxiCenter tc;
 public:
-    City() {};
-    //void move ();
+    City();
     void CallTaxiCenter(Passenger p);
     Passenger checkForPassengerCalls();
     TaxiCenter getTaxiCenter() {};
