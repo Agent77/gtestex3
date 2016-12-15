@@ -28,7 +28,7 @@ TEST_F(TestTaxiCenter, AssignDrivers) {
     Taxi taxi = Taxi(12,'H','R');
     tc.addTaxi(taxi);
     //tc.addDriver(d2);
-    tc.assignDrivers(); //TODO didnt enter right vehicle id
+    tc.assignDrivers();
     vector<Driver> drivers = tc.getDrivers();
     ASSERT_EQ(drivers.at(0).getTrip().getStart()->getX(), 3) << "Wrong assingment of Trip.";
     ASSERT_EQ(drivers.at(0).getTaxi().getId(),12) << "Taxi assigned incorrectly.";
