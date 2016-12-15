@@ -9,13 +9,14 @@
 #include "Graph.h"
 #include "Grid.h"
 #include "Coordinate.h"
+#include "Searchable.h"
 
 /*
  * Class which performs the Breadth-First Search on any given graph/diagram.
  * It contains the graph, start, and end-point, in Node pointer form.
  */
 using namespace std;
-class BFS {
+class BFS: public Searchable {
 private:
     std::queue<Node*> myDeque;
     Node* source;
@@ -24,13 +25,11 @@ private:
 
 public:
     BFS(){};
-    ~BFS();
     BFS(Graph* g);
-    void getPath();
+    Node* getSource();
+    Node* getDest();void getPath();
     void PrintPath(Node* s, Node* d);
     std::vector<Node*> visitNeighbors(Node* n);
-    Node* getDest();
-    Node* getSource();
     Coordinate* getNextInPath(Coordinate* sLoc, Coordinate* dLoc);
 
 };

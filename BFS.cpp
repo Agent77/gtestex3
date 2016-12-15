@@ -93,15 +93,6 @@ std::vector<Node*> BFS::visitNeighbors(Node* n) {
     }
     return neighbors;
 }
-BFS::~BFS() {
-
-}
-Node* BFS::getDest() {
-    return destination;
-}
-Node* BFS::getSource() {
-    return source;
-}
 
 Coordinate* BFS::getNextInPath(Coordinate* sLoc, Coordinate* dLoc){
     this->source =  graph->getNode(sLoc);
@@ -118,4 +109,12 @@ Coordinate* BFS::getNextInPath(Coordinate* sLoc, Coordinate* dLoc){
 
     }
     return previousNode->getMyLocation();
+}
+
+Node* BFS::getSource() {
+    return source;
+}
+
+Node* BFS::getDest() {
+    return destination;
 }
