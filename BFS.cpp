@@ -109,12 +109,9 @@ Coordinate* BFS::getNextInPath(Coordinate* sLoc, Coordinate* dLoc){
     //this->source->setPrev(*source);
     this->destination = graph->getNode(dLoc);
     this->getPath();
-    Node *node= getDest();
+    Node *node= destination;
     Node* previousNode;
-    while (node != source && node->getPrev()!=NULL){
-     /*   if(node->getMyLocation()->equalTo(source->getMyLocation())) {
-            break;
-        }*/
+    while (node != source && node->getPrev()!= NULL){
         previousNode = node;
         node = node->getPrev();
 

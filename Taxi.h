@@ -24,7 +24,7 @@ public:
     virtual void getManu();
     virtual int getTariff();
     virtual int getId();
-    virtual int getKms(){};
+    virtual int getKms();
 };
 
 

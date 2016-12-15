@@ -2,8 +2,8 @@
 // Created by Tiki Lobel on 11/17/16.
 //
 
-#ifndef EX1_BFS_H
-#define EX1_BFS_H
+#ifndef GTESTEX3_BFS_H
+#define GTESTEX3_BFS_H
 #include "Node.h"
 #include <queue>
 #include "Graph.h"

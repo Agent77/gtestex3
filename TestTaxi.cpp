@@ -6,7 +6,7 @@
  * Tests that the correct number of kms has been inserted into the taxi.
  */
 TEST_F(TestTaxi, updatingKMs) {
-    Taxi t = Taxi();
+    Taxi t = Taxi(23,'H','R');
     int kms = t.getKms();
     t.updateKms();
     int kms2 = t.getKms();

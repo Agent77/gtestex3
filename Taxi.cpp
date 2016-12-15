@@ -11,7 +11,7 @@ Taxi::Taxi() {
 //}
 
 void Taxi::updateKms() {
-
+    this->kmPassed += 1;
 }
 
 int Taxi::getSpeed() {
@@ -35,4 +35,9 @@ Taxi::Taxi(int id, char type, char c) {
     cabId = id;
     manufacturer = type;
     color = c;
-};
+    kmPassed = 0;
+}
+
+int Taxi::getKms() {
+    return kmPassed;
+}

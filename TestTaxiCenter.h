@@ -13,10 +13,10 @@ private:
 public:
     void SetUp() {
         tc = TaxiCenter();
-            cout << "Setting up.";
+            cout << "Setting up.\n";
     }
     void TearDown() {
-            cout << "Tearing Down.";
+            cout << "Tearing Down.\n";
 
     }
 };
