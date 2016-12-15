@@ -7,17 +7,26 @@
 #include "TaxiCenter.h"
 #include "Passenger.h"
 #include "BFS.h"
+#include <boost/lexical_cast.hpp>
+#include <boost/token_functions.hpp>
+#include <boost/tokenizer.hpp>
+
+typedef boost::tokenizer<boost::char_separator<char>> tokenizer;
 
 class City {
 private:
     TaxiCenter tc;
 public:
-    City(BFS* map);
-    City();
-    void move ();
+    City() {};
+    //void move ();
     void CallTaxiCenter(Passenger p);
     Passenger checkForPassengerCalls();
     TaxiCenter getTaxiCenter() {};
+    Driver createDriver(string s);
+    Trip createTrip(string s);
+    Graph* createGraph(string s, string s1);
+    Taxi createTaxi(string s);
+    Coordinate* createCoordinate(string obstacleLocation);
 };
 
 

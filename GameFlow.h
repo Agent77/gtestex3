@@ -18,11 +18,7 @@ public:
     //void doOneFrame();
     void run();
     void initialize();
-    Driver createDriver(string s);
-    Trip createTrip(string s);
-    Graph* createGraph(string s, string s1);
-    Taxi createTaxi(string s);
-    Coordinate* createCoordinate(string obstacleLocation);
+
 };
 
 
