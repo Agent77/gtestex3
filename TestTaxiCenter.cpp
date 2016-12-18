@@ -20,7 +20,7 @@ TEST_F(TestTaxiCenter, AssignDrivers) {
     TaxiCenter tc = TaxiCenter();
     Trip t1 = Trip(77,3,3,1,1,2,3);
     Trip t2 = Trip(10,2,2,3,4,1,7);
-    tc.addTrip(t1); //TODO didnt add trip
+    tc.addTrip(t1);
     //tc.addTrip(t2);
     Driver d1 = Driver(77,30,'M',2, 12);
     Driver d2 = Driver(28,45,'W',1, 45);
@@ -88,16 +88,24 @@ TEST_F(TestTaxiCenter, RequestDriverLoc) {
 /*
  * Tests that the closest available driver to a passenger is chosen.
  */
-TEST_F(TestTaxiCenter, FindDriver) {//TODO FIX
-    /*Passenger p= Passenger(Point(2,3), Point(3,3));
-    TaxiCenter tc = TaxiCenter();
-    Trip t = Trip(p.getSource().getX(),p.getSource().getY(),p.getDestination().getX(), p.getDestination().getY(),2,1,2);
-    tc.setLocation(0,Point(2,1));
-    tc.setLocation(1,Point(2,1)); //This is the right driver because its a luxury cab and will
-    // arrive in one step
-    tc.setLocation(2,Point(3,3));
-    Driver rightDriver = Driver(123,25,"single");
-    rightDriver.setTaxi(Taxi (123,10,"honda","green",500,100,true));
-    Driver d = tc.findDriver(t);
-    ASSERT_EQ(d.getId(),rightDriver.getId())<< "The findDriver method didn't find the right one";
-*/}
+TEST_F(TestTaxiCenter, FindDriver) {
+    Graph *grid = new Grid(5, 5);
+    TaxiCenter tc = TaxiCenter(grid);
+    Trip t1 = Trip(77,3,3,1,1,2,3);
+    Trip t2 = Trip(10,2,2,3,4,1,7);
+    Driver d1 = Driver(77,30,'M',2, 12, grid);
+    Driver d2 = Driver(28,45,'W',1, 45, grid);
+    tc.addDriver(d1);
+    tc.addDriver(d2);
+    tc.addTrip(t1);
+    tc.addTrip(t2);
+    //tc.assignDrivers();
+    tc.driveAll();
+    Trip newTrip = Trip(2,3,4,2,1, 1, 10);
+    tc.addTrip(newTrip);
+    tc.assignDrivers();
+    Point* p = new Point(2,1);
+    ASSERT_TRUE(d1.getTrip().getEnd()->equalTo(p)) << "Wrong assignment.";
+    delete grid;
+    delete p;
+    }

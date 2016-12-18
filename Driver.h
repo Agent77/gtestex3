@@ -25,7 +25,7 @@ public:
     Driver(int driverId, int age, char mStatus, int exp, int vehicleId, Graph* gps);
     Driver(int driverId, int age, char mStatus, int exp, int vehicleId);
     int getAge();
-    int getVehicleId() { return vehicleId;};
+    int getVehicleId();
     int getDriverId();
     int getExp() {
         return exp;

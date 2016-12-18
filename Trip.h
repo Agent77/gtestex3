@@ -11,6 +11,8 @@ private:
     int yStart;
     int xEnd;
     int yEnd;
+    Coordinate* start;
+    Coordinate* end;
     int numOfPassengers;
     int metersPassed;
     double tariff;

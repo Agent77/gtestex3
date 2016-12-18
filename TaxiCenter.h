@@ -19,6 +19,7 @@ private:
     Point* locations;
     std::vector<Trip> trips;
     Graph* map;
+    bool started;
 public:
     TaxiCenter();
     TaxiCenter(Graph* map1);

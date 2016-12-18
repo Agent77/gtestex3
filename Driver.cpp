@@ -10,7 +10,7 @@ Driver::Driver(int driverId, int age, char mStatus, int exp, int vehicleId, Grap
     this->age=age;
     this->maritalStatus=mStatus;
     this->vehicleId=vehicleId;
-    this->exp=exp;
+    this->exp = exp;
     this->gps = map;
 }
 
@@ -25,14 +25,15 @@ Driver::Driver(int driverId, int age, char mStatus, int exp, int vehicleId) {
 
 void Driver::drive() {
     BFS bfs = BFS(gps);
+    Coordinate* start = myTrip.getStart();
+    Coordinate* end = myTrip.getEnd();
     Coordinate *c;
     do {
-        if(myTrip.getStart()->equalTo(myTrip.getEnd())) {
-            break;
-        }
-        c  = bfs.getNextInPath(myTrip.getStart(), myTrip.getEnd());
+        c  = bfs.getNextInPath(start, end);
         myTrip.updateStartPoint(c);
-    } while(myTrip.getStart() != myTrip.getEnd());
+        start = myTrip.getStart();
+        end = myTrip.getEnd();
+    } while((!start->equalTo(end)));
 }
 
 
@@ -69,7 +70,7 @@ void Driver::setTaxi(Taxi t) {
 }
 
 void Driver::setTrip(Trip t) {
-    myTrip=t;
+    myTrip = t;
 }
 
 void Driver::rateMe(int rating) {
@@ -84,4 +85,8 @@ void Driver::addPassenger(Passenger p) {
 
 Driver::~Driver() {
 
+}
+
+int Driver::getVehicleId() {
+     return vehicleId;
 }

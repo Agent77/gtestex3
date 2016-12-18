@@ -3,11 +3,12 @@
 #include "Driver.h"
 using namespace std;
 TaxiCenter::TaxiCenter() {
-
+    started = false;
 }
 
 TaxiCenter::TaxiCenter(Graph* map1) {
     map = map1;
+    started = false;
 }
 //Checks BFS to find the closest driver to passenger source
 Driver TaxiCenter::findClosestDriver(Trip t) {
@@ -43,6 +44,7 @@ void TaxiCenter::requestDriverLocation(int driverId){
 }
 
 int TaxiCenter::assignDrivers() {
+
     int count = 0;
 
     //Assign taxi to driver according to....
@@ -59,17 +61,37 @@ int TaxiCenter::assignDrivers() {
         taxi++;
     }
     taxis.clear();
+    if(started) {
+        vector<Driver>::iterator driverList = drivers.begin();
+        vector<Trip>::iterator trip = trips.begin();
+        while(driverList != drivers.end()) {
+            trip = trips.begin();
+            while (trip != trips.end()) {
+                if ((*(driverList)).getTrip().getStart()->equalTo((*(trip)).getStart())) {
+                    (*(driverList)).setTrip(*trip);
+                }
+                trip++;
+            }
+            driverList++;
+        }
 
-    vector<Driver>::iterator driverList = drivers.begin();
-    vector<Trip>::iterator trip = trips.begin();
-    while(driverList != drivers.end() && trip != trips.end()) {
-        (*(driverList)).setTrip((*(trip)));
-        driverList++;
-        trip++;
-        count++;
+        }
+    else {
+
+        vector<Driver>::iterator driverList = drivers.begin();
+        vector<Trip>::iterator trip = trips.begin();
+        while (driverList != drivers.end() && trip != trips.end()) {
+            (*(driverList)).setTrip((*(trip)));
+            driverList++;
+            trip++;
+            count++;
+        }
+        started = true;
+
     }
     trips.clear();
     return count;
+
 }
 
 vector <Driver> TaxiCenter::getDrivers (){

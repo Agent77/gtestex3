@@ -12,8 +12,8 @@ private:
     TaxiCenter tc;
 public:
     void SetUp() {
-        tc = TaxiCenter();
-            cout << "Setting up.\n";
+        //tc = TaxiCenter();
+        cout << "Setting up.\n";
     }
     void TearDown() {
             cout << "Tearing Down.\n";
