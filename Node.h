@@ -29,6 +29,7 @@ public:
     void setPrev(Node& n);
     int* getLocation();
     Coordinate* getMyLocation();
+    void resetNode();
 };
 
 #endif //EX1_NODE_H

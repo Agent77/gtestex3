@@ -34,6 +34,7 @@ void Driver::drive() {
         start = myTrip.getStart();
         end = myTrip.getEnd();
     } while((!start->equalTo(end)));
+    gps->resetGraph();
 }
 
 

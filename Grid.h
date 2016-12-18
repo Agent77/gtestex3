@@ -27,6 +27,7 @@ public:
     Node* getNode(Coordinate* p);
     void deleteGraph();
     void addObstacle(Coordinate* p);
+    void resetGraph();
 
 };
 #endif //EX1_GRID_H

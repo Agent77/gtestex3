@@ -18,6 +18,7 @@ public:
     virtual Node* getNode(Coordinate* p){};
     virtual void deleteGraph() {};
     virtual void addObstacle(Coordinate* p){};
+    virtual void resetGraph(){};
 };
 
 

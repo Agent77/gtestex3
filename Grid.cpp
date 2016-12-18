@@ -121,3 +121,11 @@ void Grid::addObstacle(Coordinate* p) {
     Node* node = arrayOfPtrsToNodes[p->getNextCoordinate(0)][p->getNextCoordinate(1)];
     node->makeObstacle();
 }
+
+void Grid::resetGraph(){
+    for (int i=0; i<sizeX;i++){
+        for (int j=0;j<sizeY;j++){
+            arrayOfPtrsToNodes[i][j]->resetNode();
+        }
+    }
+}

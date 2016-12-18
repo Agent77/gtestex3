@@ -70,3 +70,8 @@ void Node::makeObstacle() {
 bool Node::isObstacle() {
     return obstacle;
 }
+
+void Node::resetNode() {
+    visited=false;
+    prev=NULL;
+}
