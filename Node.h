@@ -15,7 +15,7 @@ private:
     Coordinate* myLocation;
     Node* prev;
     bool visited;
-    bool obstacle = false;
+    bool obstacle;
 public:
     Node* neighbors;
     Node();

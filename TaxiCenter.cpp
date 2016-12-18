@@ -38,7 +38,7 @@ void TaxiCenter::requestDriverLocation(int driverId){
         iter++;
     }
     Coordinate* p = (*(iter)).getTrip().getStart();
-    cout<<*p;
+    cout<<*p<<endl;
     delete p;
 
 }
@@ -127,6 +127,6 @@ void TaxiCenter::addTrip(int tripId, int xStart, int yStart, int xEnd, int yEnd,
 }
 
 void TaxiCenter::addDriver(int driverId, int age, char mStatus, int vehicleId, int exp) {
-    Driver* driver = new Driver (driverId, age, mStatus, vehicleId, exp, map);
-    drivers.push_back(*driver);
+    Driver *d = new Driver (driverId, age, mStatus, vehicleId, exp, map);
+    drivers.push_back(*d);
 }

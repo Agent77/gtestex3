@@ -4,12 +4,11 @@
 #include "LuxuryCab.h"
 #include <iostream>
 
-typedef boost::tokenizer<boost::char_separator<char>> tokenizer;
-
 void GameFlow::initialize() {
     string obstacles;
     string size1;
     string size2;
+    int obstacleCount;
 
     //To be used later as graph size
     cin >> size1;
@@ -18,7 +17,8 @@ void GameFlow::initialize() {
 
     //Checks for obstacles
     cin >> obstacles;
-    int obstacleCount = boost::lexical_cast<int>(obstacles);
+    std::istringstream(obstacles) >> obstacleCount;
+    //int obstacleCount ;//= atoi(obstacles);
     if (obstacleCount != 0) {
         string obstacle;
         for (int count = 0; count < obstacleCount; count++) {
@@ -33,25 +33,26 @@ void GameFlow::initialize() {
 
 void GameFlow::run() {
     int run = 1;
-    int action1;
+    char action1;
     int driverId;
-    std::string s;
+    string input;
+    string s;
 
 
     while (run) {
         cin >> action1;
-        int action = boost::lexical_cast<int>(action1);
+        int action = (int)action1 - 48;
         switch(action) {
             case 1: //Insert Driver
             {
-                cin >> s;
-                Driver d = city.createDriver(s);
+                cin >> input;
+                Driver d = city.createDriver(input);
                 tc.addDriver(d);
                 break;
             }
             case 2: {
-                cin >> s;
-                Trip t = city.createTrip(s);
+                cin >> input;
+                Trip t = city.createTrip(input);
                 tc.addTrip(t);
                 break;
             }

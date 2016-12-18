@@ -2,6 +2,7 @@
 #include "StandardCab.h"
 #include "LuxuryCab.h"
 
+
 City::City() {
 
 }
@@ -16,21 +17,24 @@ Passenger City::checkForPassengerCalls() {
 
 Driver City::createDriver(string s) {
     int info[6];
-    string status;
+    char status;
+    int f;
     int i = 0;
-    boost::char_separator<char> sep{","};
-    tokenizer tok{s, sep};
-    for (const auto &t : tok) {
-        if(i != 2) {
-            int d = boost::lexical_cast<int>(t);
-            info[i] = d;
+    string g;
+    std::istringstream sep(s);
+    std::getline(sep, g,',');
+    std::istringstream (g)>>f;
+    for (int j=0; j<s.size()/2;j++){
+        if (i!=2){
+            std::istringstream (g)>>f;
+            info[i]= f;
+        } else{
+            status=g[0];
         }
-        else {
-            status = t;
-        }
+        std::getline(sep, g,',');
         i++;
     }
-    Driver d = Driver(info[0], info[1], status[0], info[3], info[4]);
+    Driver d = Driver(info[0], info[1], status, info[3], info[4]);
     return d;
 }
 
@@ -38,14 +42,17 @@ Driver City::createDriver(string s) {
 Trip City::createTrip(string s) {
     //7 ints
     int i = 0;
-    int place = 0;
     int value[13];
-
-    boost::char_separator<char> sep{","};
-    tokenizer tok{s, sep};
-    for (const auto &t : tok) {
-        value[place] = boost::lexical_cast<int>(t);
-        place++;
+    int f;
+    string g;
+    std::istringstream sep(s);
+    std::getline(sep, g,',');
+    std::istringstream (g)>>f;
+    for (int j=0; j<s.size()/2;j++) {
+        value[i] = f;
+        i++;
+        std::getline(sep, g,',');
+        std::istringstream (g)>>f;
     }
     Trip trip = Trip(value[0],value[1], value[2], value[3],
                      value[4], value[5], value[6]);
@@ -53,22 +60,22 @@ Trip City::createTrip(string s) {
 }
 
 Coordinate* City::createCoordinate(string s) {
-    int x = boost::lexical_cast<int>(s[0]);
-    int y = boost::lexical_cast<int>(s[2]);
+    int x = (int)s[0] - 48;
+    int y = (int)s[2] - 48;
     Coordinate* point = new Point(x, y);
     return point;
 }
 
 Graph* City::createGraph(string s, string s1) {
-    int x = boost::lexical_cast<int>(s);
-    int y = boost::lexical_cast<int>(s1);
+    int x = (int)s[0] - 48;
+    int y = (int)s1[0] - 48;
     Graph *graphPointer = new Grid(x, y);
     return graphPointer;
 }
 
 Taxi City::createTaxi(string s) {
-    int id = boost::lexical_cast<int>(s[0]);
-    int type = boost::lexical_cast<int>(s[2]);
+    int id = (int)s[0] - 48;
+    int type = (int)s[2] - 48;
     if(type == 1) {
         StandardCab t = StandardCab(id, s[4], s[6]);
         return t;
@@ -76,5 +83,4 @@ Taxi City::createTaxi(string s) {
         LuxuryCab t = LuxuryCab(id, s[4], s[6]);
         return t;
     }
-
 }

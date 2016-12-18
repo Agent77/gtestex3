@@ -11,7 +11,7 @@
 #include <boost/token_functions.hpp>
 #include <boost/tokenizer.hpp>
 
-typedef boost::tokenizer<boost::char_separator<char>> tokenizer;
+typedef boost::tokenizer<boost::char_separator<char> > tokenizer;
 
 class City {
 private:
